@@ -28,4 +28,4 @@ zapi = ZabbixAPI(url=zabbix_url, user=zabbix_user, password=zabbix_password)
 
 # Get host item value
 gid = zapi.hostgroup.get(filter={"name": gname})
-print("ID of {} is {}",format(gname,gid[0]['groupid']));
+print(gid[0]['groupid'])
